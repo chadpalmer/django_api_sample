@@ -25,7 +25,7 @@ axiom radio button.
 
 You can also check out the slightly customized admin at http://127.0.0.1:8000/admin/. You can use the user "admin" and the password "test1234" to play around with your local sqlite3 DB.
 
-(NOTE: If you want to edit the code of this project, you might need to adjust your project interpreter setting in whatever app you're using to view/edit the code of this projects as it likely defaults to the system 2.7.x version if you are on a Mac.)
+(NOTE: If you want to edit the code of this project, you might need to adjust your project interpreter setting in whatever app you're using to view/edit the code of this project as it likely defaults to the system 2.7.x version if you are on a Mac.)
 
 If that is the case, you need to change the project interpreter setting to point to the Python 3 installation in your virtual environment. If you followed the instructions above, the interpreter path you need to set in your code editor app will be as follows:
 ```
