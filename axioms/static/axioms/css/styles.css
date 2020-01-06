@@ -1,0 +1,82 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.content_box {
+    max-width: 900px;
+    padding: 0.4em;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.axiom_box_label {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+.axiom_box {
+    background: #2aabd2;
+    color: white;
+    min-height: 6em;
+    margin-bottom: 1em;
+    padding: 0.4em;
+    width: 100%;
+}
+
+.axiom_box p {
+    margin-bottom: 0.5em;
+}
+
+.axiom_button {
+    background: #2aabd2;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.axiom_button:hover {
+    background: #0f6674;
+}
+
+.axiom_id_box {
+    padding-left: 6px;
+    width: 100px;
+}
+
+.axiom_id_box.error {
+    background: #a41515;
+    color: white;
+}
+
+.error_box {
+    color: #a41515;
+    display: none;
+}
+
+.error_box.show {
+    display: block;
+}
+
+.choose_box {
+    display: none;
+}
+
+.choose_box.show {
+    display: block;
+}
+
+.axiom_category {
+    font-weight: bold;
+}

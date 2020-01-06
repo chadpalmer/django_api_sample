@@ -1,0 +1,36 @@
+{% load static %}
+
+<html lang="en">
+    <head>
+        <title>{{ intro_object.title }}</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'axioms/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'axioms/css/styles.css' %}">
+        <script type="text/javascript">
+            const num_axioms = {{intro_object.num_axioms}};
+        </script>
+        <script type="text/javascript" src="{% static 'axioms/js/js.js' %}"></script>
+    </head>
+    <body>
+        <div class="content_box">
+            <h1>{{ intro_object.title }}</h1>
+            <p>{{ intro_object.description}}</p>
+            <label>
+                <input type="radio" name="axiom_choice" value="random" id="random" checked> Get random axiom
+            </label><br/>
+            <label>
+                <input type="radio" name="axiom_choice" value="choose" id="choose"> Get axiom by ID
+            </label><br/>
+            <div id="choose_box" class="choose_box">
+                <label for="axiom_id"><input type="text" id="axiom_id" class="axiom_id_box"> Please enter an axiom ID from 1 to {{intro_object.num_axioms}}.</label>
+            </div>
+            <div id="error_box" class="error_box">ERROR: You need to enter an ID from 1 to {{intro_object.num_axioms}} in the red box above if you selected the "Get axiom by ID" button above. </div>
+            <button id="get_axiom" class="axiom_button" type="button">Get me my axiom!</button>
+            <p class="axiom_box_label">Axiom box</p>
+            <div id="axiom" class="axiom_box">
+                <p class="axiom_category" id="axiom_category"></p>
+                <p id="axiom_text"></p>
+            </div>
+            <p>{{intro_object.footer}}</p>
+        </div>
+    </body>
+</html>
