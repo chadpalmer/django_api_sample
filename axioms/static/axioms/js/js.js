@@ -49,13 +49,14 @@ const build_api_url = () => {
         int_current_axiom = int_random_id;
         url += int_random_id.toString() + "/";
     }
-    load_axiom(url);
+    load_axiom(url).then((json) => {
+        display_axiom(json);
+    });
 };
 
 const load_axiom = async (url) => {
     const response = await fetch(url);
-    const json = await response.json();
-    display_axiom(json);
+    return await response.json();
 };
 
 const display_axiom = (json) => {
