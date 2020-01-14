@@ -15,7 +15,7 @@ Next, install libraries and requirements with PIP as follows.
 ```
 pip install -r requirements.txt
 ```
-At this point, you should be ready to run the app locally, but running the following command.
+At this point, you should be ready to run the app locally, by running the following command.
 ```
 python manage.py runserver
 ```
